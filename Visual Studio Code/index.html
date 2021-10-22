@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="Style.css">
+    
+<title> Leksand IF</title>
+
+ </head>
+<body>
+<div id="heading">
+    <p><strong><h1>Gud Ericus</h1></strong></p>
+
+</div>
+    
+<hr>
+<h2><a href="Gåmed.html"> Gå med idag</a></h2>
+<p>Vill du gå med tron om Ericus? Isåfall tryck på knappen ovan</p>
+<hr>
+<p><h1>Om oss</h1></p>
+<p>Ericus är en svensk gud. I hans visa ord så sa han att man ska heja på Chelsea och Leksand. Ericus vill att just DU ska gör de samma. Detta kan du göra genom att gå med oss. Tryck bara på den stora "Gå med idag" knappen.</p>
+<hr>
+<p><h1>Hur kommer du till helvetet?</h1></p>
+<p class="Dont"> Ifall du hejar på Liverpool, Arsenal eller något annat lag i hela världen för den delen så kommer du att komma till helvetet. Väl där så kommer du få stryk av 
+<strong>djävulen.</strong></p><br>
+<p><small> Klicka på länken nedan för att se en del av helvetet </small><br></p>
+<p><a href="https://www.arsenal.com/"><h3>Arsenal</h3></a></p>
+
+<p><h1>Lista av vad DU kan göra för att komma till Gud Ericus</h1></p>
+<ul>
+<li>Kolla på Leksand</li>
+<li>Kolla på Chelsea</li>
+<li>Prata om dessa lag (till dina vänner)</li>
+
+</ul>
+<br>
+<h1>Användbara länkar</h1>
+<p>Länk till sidor för att bättra dina odds att komma till Ericus</p>
+<p><a href="https://www.leksandsif.se/p/">Leksand</a></p>
+<p><a href="https://www.chelseafc.com/en">Chelsea</a></p>
+<br><br>
+<br><br>
+<h1>Din position</h1>
+<p>Klicka här för att få din position.</p>
+
+<button onclick="getLocation()">Prova</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+<br><br>
+
+<br><br>
+<h1>Galleri</h1><br>
+<img src="img/1.jpeg" alt="">
+<img src="img/2.jpeg" alt="">
+<img src="img/3.jpeg" alt="">
+<img src="img/4.jpeg" alt="">
+
+</body>
+</html>
